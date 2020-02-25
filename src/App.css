@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+*{
+font-family: 'Indie Flower';
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#theBoard{
+display: flex;
+flex-wrap: wrap;
+margin: 0 auto;
+width: 320px;
+height: 320px;
+font-size: 40px;
 }
+h1 {
+    text-align: center;
+    font-family: 'Indie Flower';
+    font-size: 75px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2013/07/13/01/08/stationery-155143_960_720.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top;
 }
+#footer {
+    text-align: center;
+    font-size: 29px;
+    padding-top: 50px;
 
-.App-link {
-  color: #61dafb;
 }
+#reset{
+    font-size: 20px;
+    margin-left: 92px;
+    font-weight: bold;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+}
+.box {
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(247, 179, 7);
+
+}
+.box:nth-child(1){
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+}
+.box:nth-child(2){
+    border-top: 0;
+    border-bottom: 0;
+}
+.box:nth-child(3){
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+}
+.box:nth-child(4){
+    border-left: 0;
+    border-bottom: 0;
+}
+.box:nth-child(5){
+    border-bottom: 0;
+}
+.box:nth-child(6){
+    border-right: 0;
+    border-bottom: 0;
+}
+.box:nth-child(7){
+    border-left: 0;
+    border-bottom: 0;
+}
+.box:nth-child(8){
+    border-bottom: 0;
+}
+.box:nth-child(9){
+    border-right: 0;
+    border-bottom: 0;
 }
